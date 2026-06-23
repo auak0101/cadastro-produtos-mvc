@@ -1,0 +1,147 @@
+body {
+    font-family: 'Tahoma', Arial, sans-serif;
+    background-color: #d6d9df; /* Cinza de fundo clássico do Windows */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container que simula a Janela do Sistema */
+.container-app {
+    width: 100%;
+    
+    background-color: #f0f0f0;
+    border: 3px solid #0054e3; /* Borda azul da janela */
+    border-radius: 8px 8px 0 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* Cabeçalho / Barra de Título da Janela */
+h1 {
+    color: #ffffff;
+    background: linear-gradient(to bottom, #0058e5, #0046cb); /* Gradiente azul XP/7 */
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Subtítulo ocultado ou adaptado para sumir com o texto extra */
+p.subtitulo {
+    display: none;
+}
+
+/* Área Interna do Formulário (Groupbox cinza) */
+.bloco-formulario {
+    background-color: #f4f4f4;
+    border: 1px solid #aca899; /* Borda interna cinza */
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+/* Título dentro do bloco como legenda */
+.bloco-formulario h3 {
+    font-size: 13px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos Inputs e Selects */
+.bloco-formulario input, 
+.bloco-formulario select {
+    width: auto;
+    display: inline-block;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    border: 1px solid #7f9db9; /* Borda azulada padrão de inputs clássicos */
+    border-radius: 0px;
+    font-size: 13px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    height: 24px;
+}
+
+/* Alinhamento horizontal para inputs menores semelhantes ao print */
+.bloco-formulario label {
+    font-size: 12px;
+    color: #000000;
+    margin-right: 5px;
+}
+
+/* Container dos Botões Principais */
+.container-botoes-print {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo Base dos Botões do Sistema (Novo, Salvar, Editar, Excluir, Cancelar) */
+button, .btn-verde, .btn-Azul, .btn-cinza, .btn-vermelho {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 12px;
+    color: #000000 !important;
+    background: linear-gradient(to bottom, #fcfcfc, #e0e0e0);
+    border: 1px solid #707070 !important;
+    border-radius: 3px !important;
+    padding: 4px 12px !important;
+    width: auto !important;
+    height: 26px;
+    font-weight: normal;
+    cursor: pointer;
+    box-shadow : inset 0 1px 0 #fff;
+    display : inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover, .btn-verde:hover, .btn-Azul:hover, .btn-cinza:hover, .btn-vermelho:hover {
+    background: linear-gradient(to bottom, #e5f1fb, #e0e0e0) !important;
+    border-color: #0078d7 !important;
+}
+
+/* Grid inferior para dados / Listagem */
+.container-acoes {
+    margin: 10px 15px;
+}
+
+h2.titulo-produtos {
+    font-size: 14px;
+    color: #000000;
+    margin: 15px 15px 5px 15px;
+    font-weight: bold;
+}
+
+/* Grid / Tabela de listagem cinza */
+table {
+    width: calc(100% - 30px);
+    margin: 0 15px 15px 15px;
+    border: 1px solid #ababab;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 4px 8px;
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #ababab;
+}
+
+td {
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #000000;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
