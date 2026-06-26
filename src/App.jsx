@@ -39,7 +39,8 @@ export default function App() {
 
  return (
     <div className="container-app">
-        <h1>Gerenciador de Beleza MVC</h1>
+        <h1>Cadastro Produtos | MVC</h1>
+        <h2>Mercadinho do seu zé</h2>
         <p className="subtitulo">Projeto Prático para Iniciantes</p>
 
         <FormProduto aoCadastrar={handleCadastrar} />
