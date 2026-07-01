@@ -10,7 +10,7 @@ body {
 /* Container que simula a Janela do Sistema */
 .container-app {
     width: 100%;
-    
+    align-items: center;
     background-color: #f0f0f0;
     border: 3px solid #0054e3; /* Borda azul da janela */
     border-radius: 8px 8px 0 0;
